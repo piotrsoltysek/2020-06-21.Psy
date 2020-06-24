@@ -6,13 +6,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DogsRepository {
-    public List<Dog> dogs = new ArrayList<>();
+    private List<Dog> dogs = new ArrayList<>();
 
     public DogsRepository() {
-        this.dogs.add(new Dog());
+        for (int i = 0; i < 10; i++) {
+            dogs.add(new Dog());
+        }
     }
 
     public List<Dog> getDogs() {
-        return this.dogs;
+        return dogs;
     }
 }
