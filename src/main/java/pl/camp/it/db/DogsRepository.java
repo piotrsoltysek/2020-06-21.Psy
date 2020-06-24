@@ -7,14 +7,19 @@ import java.util.List;
 
 public class DogsRepository {
     private List<Dog> dogs = new ArrayList<>();
+    private static final DogsRepository dogsRepository = new DogsRepository();
 
-    public DogsRepository() {
+    private DogsRepository() {
         for (int i = 0; i < 10; i++) {
             dogs.add(new Dog());
         }
     }
 
     public List<Dog> getDogs() {
-        return dogs;
+        return this.dogs;
+    }
+
+    public static DogsRepository getDogsRepository() {
+        return dogsRepository;
     }
 }

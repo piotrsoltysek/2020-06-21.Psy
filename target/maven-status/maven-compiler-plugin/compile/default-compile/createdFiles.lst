@@ -1,3 +1,4 @@
 pl\camp\it\App.class
 pl\camp\it\db\DogsRepository.class
 pl\camp\it\model\Dog.class
+pl\camp\it\db\Persistance.class
